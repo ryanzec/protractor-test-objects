@@ -1,0 +1,35 @@
+{
+  "name": "protractor-test-objects",
+  "version": "0.1.0",
+  "description": "A library to help with use of page/component objects when testing with protractor",
+  "keywords": [
+    "angular",
+    "protractor",
+    "test",
+    "testing",
+    "end-to-end",
+    "e2e"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanzec/protractor-test-objects"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanzec/protractor-test-objects/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Ryan Zec",
+    "email": "code@ryanzec.com",
+    "url": "http://www.ryanzec.com"
+  },
+  "dependencies": {
+    "lodash": "2.4.1",
+    "bluebird": "2.2.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.25"
+  },
+  "main": "lib/index.js"
+}
