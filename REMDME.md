@@ -4,6 +4,20 @@ A library to help with the use of page/component objects when testing with [Prot
 
 It is intended that tests written with this library will move of Protractor specific code into page/component objects in order to make the test files themselves simplier, cleaner, and easier to understand.  This should allow for better reuse of code as each action and assertions should have it own method.
 
+You will also noticed one liner methods and those are there to again make the test simple to read/write.  I find it much easier to remember and read this:
+
+```javascript
+page.sendKeysToPage('s');
+```
+
+compared to this:
+
+```javascript
+browser.actions().sendKeys('s').perform();
+```
+
+The goals is that the test files should be easy to read, have a consistent API, and have not Protractor or webdriver specific code in them.
+
 # Installation
 
 ```npm install protractor-test-objects```
@@ -95,7 +109,7 @@ Sometimes you will have tests the pass/fail randomly caused by timing issue, use
 
 Returns a css selector string.
 
-### number numberOfVisibleElements(selector)
+### number getNumberOfVisibleElements(selector)
 
 Returns the number of visible elements there are for the passed selector.
 
@@ -103,13 +117,29 @@ Returns the number of visible elements there are for the passed selector.
 
 Wait up to a specified time for the selector to return an element.
 
+### sendKeysToPage(string keys)
+
+Sends key to the browser but not specific to any element, useful for testing things like general keyboard shortcuts (that are not specifc to any element).
+
+### takeScreenshot(string fileName, string path)
+
+Takes a screenshot which is store in screenshots/* relative to the directory in which you started protractor (unless `path` is specificed).
+
+### clickBrowser(number horizontal, number vertical)
+
+Clicks the browser at the specified pixel.
+
+### resizeBrowser(number width, number height)
+
+Resize the browser.
+
 ## basePage
 
 ### baseUrl (string)
 
 Base URL for the page object.
 
-### open(string appendUrl)
+### open(string appendUrl, boolean waitForAngular)
 
 Open the browser to a url.
 
