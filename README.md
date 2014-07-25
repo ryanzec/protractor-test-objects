@@ -61,7 +61,7 @@ module.exports = {
 
 ```javascript
 var protractorTestObjects = require('protractor-test-objects');
-var getHelpComponentFactory = require('../components/help');
+var helpComponentFactory = require('../components/help');
 var desktopPage = protractorTestObjects.basePage.create();
 
 desktopPage.baseSelector = '.desktop-page';
@@ -72,7 +72,7 @@ desktopPage.isVisible = function() {
 };
 
 desktopPage.getHelpComponent = function() {
-  return getHelpComponentFactory.create(desktopPage.baseSelector + ' > .help');
+  return helpComponentFactory.create(desktopPage.baseSelector + ' > .help');
 };
 
 module.exports = {
