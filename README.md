@@ -125,13 +125,17 @@ Sends key to the browser but not specific to any element, useful for testing thi
 
 Takes a screenshot which is store in screenshots/* relative to the directory in which you started protractor (unless `path` is specificed).
 
-### clickBrowser(number horizontal, number vertical)
-
-Clicks the browser at the specified pixel.
-
 ### resizeBrowser(number width, number height)
 
 Resize the browser.
+
+### setImplicitWait(number timeToWait)
+
+Sets the implicit wait timeout for web driver calls.
+
+### repeatKey
+
+Repeat a certain keys (or group of keys).
 
 ## basePage
 
