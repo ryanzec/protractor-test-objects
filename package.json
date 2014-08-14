@@ -1,6 +1,6 @@
 {
   "name": "protractor-test-objects",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A library to help with use of page/component objects when testing with protractor",
   "keywords": [
     "angular",
@@ -24,8 +24,7 @@
     "url": "http://www.ryanzec.com"
   },
   "dependencies": {
-    "lodash": "2.4.1",
-    "bluebird": "2.2.2"
+    "lodash": "2.4.1"
   },
   "devDependencies": {},
   "engines": {
