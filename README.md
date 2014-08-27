@@ -105,11 +105,15 @@ An object of selectors with the key being the name of the selector (used in meth
 
 Sometimes you will have tests the pass/fail randomly caused by timing issue, use this method to resolve those issues.  Use this method only for cases where you need the extra time for the test to pass consistently so that you can just search for this method to find all tests that have that problem.
 
-### getSelection(string name, boolean withBase)
+### getSelector(string name, boolean withBase)
 
 Returns a css selector string.
 
-### number getNumberOfVisibleElements(selector)
+### promise getNumberOfVisibleElements(string selector)
+
+Returns the number of visible elements there are for the passed selector.
+
+### promise getNumberOfElements(string selector)
 
 Returns the number of visible elements there are for the passed selector.
 
