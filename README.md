@@ -101,25 +101,17 @@ Base selector that can be prepended with the result of a call to `getSelector()`
 
 An object of selectors with the key being the name of the selector (used in method like `getSelector()`) and the value being the css selector.
 
-### flackyTiming(number timeToWait)
-
-Sometimes you will have tests the pass/fail randomly caused by timing issue, use this method to resolve those issues.  Use this method only for cases where you need the extra time for the test to pass consistently so that you can just search for this method to find all tests that have that problem.
-
 ### getSelector(string name, boolean withBase)
 
 Returns a css selector string.
 
-### promise getNumberOfVisibleElements(string selector)
-
-Returns the number of visible elements there are for the passed selector.
-
-### promise getNumberOfElements(string selector)
-
-Returns the number of visible elements there are for the passed selector.
-
 ### waitForElement(string selector, number timeToWait)
 
-Wait up to a specified time for the selector to return an element.
+Wait up to a specified time for the selector to find an elements.
+
+### waitForElements(string selector, number timeToWait)
+
+Wait up to a specified time for the selector to find elements.
 
 ### sendKeysToPage(string keys)
 
@@ -147,7 +139,7 @@ Repeat a certain keys (or group of keys).
 
 Base URL for the page object.
 
-### open(string appendUrl, boolean waitForAngular)
+### open(string appendUrl)
 
 Open the browser to a url.
 
