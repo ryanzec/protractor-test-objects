@@ -1,3 +1,5 @@
+**Since I am no longer using Protractor for UI testing, I am no longer maintaining this project.  I would recommend everyone to use WebdriverIO (http://webdriver.io/) for UI testing.**
+
 # Protractor Test Objects
 
 A library to help with the use of page/component objects when testing with [Protractor](https://github.com/angular/protractor).  It also adds additonal functionality on top of protractor that is useful for testing.
